@@ -18,6 +18,11 @@ export const Navbar = () => {
                     <span className="text-sm font-medium hidden md:block group-hover:underline decoration-1 underline-offset-4">CART</span>
                     <div className="relative">
                         <ShoppingBag strokeWidth={1.5} size={24} />
+                        {totalItems > 0 && (
+                            <span className="absolute -top-1 -right-1 flex h-4 w-4 items-center justify-center rounded-full bg-white text-[10px] font-bold text-black">
+                                {totalItems}
+                            </span>
+                        )}
                     </div>
                 </Link>
             </div>
