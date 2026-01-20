@@ -35,7 +35,7 @@ export const CartPage = () => {
                                         <Trash2 size={20} />
                                     </button>
                                 </div>
-                                <p className="text-zinc-500 mb-2">${item.price}</p>
+                                <p className="text-zinc-500 mb-2">₹{item.price.toLocaleString('en-IN')}</p>
                                 <div className="text-sm font-medium">Qty: {item.quantity}</div>
                             </div>
                         </div>
@@ -49,7 +49,7 @@ export const CartPage = () => {
                         <div className="space-y-4 mb-8">
                             <div className="flex justify-between text-lg">
                                 <span className="text-zinc-600">Subtotal</span>
-                                <span className="font-bold">${total}</span>
+                                <span className="font-bold">₹{total.toLocaleString('en-IN')}</span>
                             </div>
                             <div className="flex justify-between text-lg">
                                 <span className="text-zinc-600">Shipping</span>
@@ -59,7 +59,7 @@ export const CartPage = () => {
 
                         <div className="border-t border-black pt-6 mb-8 flex justify-between text-xl font-bold">
                             <span>Total</span>
-                            <span>${total}</span>
+                            <span>₹{total.toLocaleString('en-IN')}</span>
                         </div>
 
                         <button className="w-full py-4 bg-black text-white font-bold uppercase tracking-widest hover:bg-zinc-800 transition-colors">

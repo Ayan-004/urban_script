@@ -38,7 +38,7 @@ export const ProductPage = () => {
                 >
                     <div>
                         <h1 className="text-4xl md:text-6xl font-bold uppercase tracking-tighter mb-4">{product.name}</h1>
-                        <p className="text-2xl font-medium text-zinc-500">${product.price}</p>
+                        <p className="text-2xl font-medium text-zinc-500">₹{product.price.toLocaleString('en-IN')}</p>
                     </div>
 
                     <div className="prose prose-zinc">

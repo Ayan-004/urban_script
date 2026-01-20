@@ -22,7 +22,7 @@ export const ProductGrid = ({ products }: ProductGridProps) => {
                         </div>
                         <div className="flex justify-between items-baseline">
                             <h3 className="text-lg font-bold uppercase tracking-tight group-hover:underline decoration-1 underline-offset-4">{product.name}</h3>
-                            <span className="text-sm font-medium text-zinc-500">${product.price}</span>
+                            <span className="text-sm font-medium text-zinc-500">₹{product.price.toLocaleString('en-IN')}</span>
                         </div>
                     </Link>
                 ))}
