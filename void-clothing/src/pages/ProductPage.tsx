@@ -48,7 +48,7 @@ export const ProductPage = () => {
                             Features a relaxed fit with dropped shoulders and raw hem details.
                             <br /><br />
                             Material: 100% Organic Cotton.<br />
-                            Made in Portugal.
+                            Made in India.
                         </p>
                     </div>
 
